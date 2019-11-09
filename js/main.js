@@ -6,7 +6,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         draggable:true,
         scrollLock: true,
-        dots: '#dots',
+        
         arrows: {
           prev: '.glider-prev',
           next: '.glider-next'
@@ -19,6 +19,7 @@ $(document).ready(function(){
               // Set to `auto` and provide item width to adjust to viewport
               slidesToShow: 'auto',
               slidesToScroll: 'auto',
+              dots: '#dots',
               itemWidth: 150,
               duration: 0.25
             }
@@ -28,6 +29,7 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 4,
               slidesToScroll: 3,
+              dots: '#dots',
               itemWidth: 150,
               duration: 0.25
             }
