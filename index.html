@@ -6,22 +6,206 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Horrorscope</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/glider.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </head>
 <body class="primary-gray w-full h-full flex flex-col">
     <section class="flex flex-col w-full h-screen bg-gray-300 p-4 items-stretch">
-        <div class="flex flex-row justify-center items-center h-32 bg-green-100">
-            <div class="w-2/3 h-32 z-40 bg-white">
-
+        <div class="flex flex-row justify-center items-center h-32 ">
+            <div class="w-2/3 sm: h-48 md:h-64 mt-40 z-20 bg-transparent">
+                <div class=" flex justify-center items-center w-full h-full bg-white">
+                    <div class="sm: text-4xl md:text-6xl font-normal text-black tracking-wider ">Horrorscope</div>
+                </div>
             </div>
         </div>
-        <div class="flex flex-row px-8 py-8  flex-auto bg-red-100">
-            <div class="bg-black w-full h-full">
+        <div class="flex flex-row px-8 py-8 flex-auto">
+            <div class="flex flex-col bg-black w-full h-full">
+                <div class="flex w-full h-32 ">
 
+                </div>
+                <div class="flex justify-center items-center w-full h-16 ">
+                    <div class="sm: text-xl md:text-2xl font-light  text-white">
+                        Get to know about your zodiac sign
+                    </div>
+                </div>
+                <div class="flex flex-auto  mx-10 my-8">
+                    <div class="glider-contain multiple">
+
+                        <button class="glider-prev">
+                            <i>
+                                <svg class="h-12 w-20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;" xml:space="preserve" ><g><polygon points="476.213,223.106 57.426,223.106 91.819,188.713 70.606,167.5 0,238.106 70.606,308.713 91.819,287.5   57.426,253.106 476.213,253.106 " data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/></g> </svg>
+                            </i>
+                        </button>
+
+                        <div class="glider">
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/001-aquarius.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        AQUARIUS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/003-aries.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        ARIES
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/005-cancer.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        CANCER
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/007-capricorn.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        CAPRICORN
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/009-gemini.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        GEMINI
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/011-leo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        LEO
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/013-libra.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        LIBRA
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/015-pisces.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        PISCES
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/017-sagittarius.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        SAGITTARIUS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/019-scorpio.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        SCORPIO
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/021-taurus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        TAURUS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mx-6">
+                                <div class="flex h-48 mx-8 bg-white justify-center items-center ">
+                                    <div class="flex w-32 h-32 bg-white">
+                                        <img src="./img/023-virgo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center h-24 primary-red">
+                                    <div class="flex font-light text-2xl text-white tracking-wider">
+                                        VIRGO
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+
+                        <button class="glider-next">
+                                <i>
+                                    <svg class="h-12 w-20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;" xml:space="preserve" ><g><polygon points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5   405.606,308.713 476.213,238.106 " data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/></g> </svg>
+
+                                </i>
+                            </button>
+                        <div id="dots" class="glider-dots">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/glider.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,3 +1,9 @@
 .primary-gray{
     background: #ECECEC;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.primary-red{
+    background:#FA0E15;
+}
