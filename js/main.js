@@ -1,5 +1,6 @@
 $(document).ready(function(){
     
+  //GLIDER 
     new Glider(document.querySelector('.glider'), {
         // Mobile-first defaults
         slidesToShow: 1,
@@ -36,6 +37,37 @@ $(document).ready(function(){
           }
         ]
       });
+
+      //SCROLL-ANIMATIONS
+
+      // var t1 = new TimelineMax();
+      // const controller = new ScrollMagic.Controller();
+
+      // t1
+      // .to(".aries-img",0.5,{
+      //   margin:0, ease: Power4.easeOut
+
+      // })
+      // .to(".aries-img-upper-wrapper",0.5,{
+      //   justifyContent: "flex-center", ease: Power4.easeOut
+      // })
+      // .to(".aries-white-box",0.5,{
+      //   margin:0, ease: Power4.easeOut
+
+      // });
+
+      // const scene = new ScrollMagic.Scene({
+      //   triggerElement:".each-zodiac",
+       
+      // })
+      // .setPin(".each-zodiac")
+      // .setTween(t1)
+      // .addTo(controller);
+
+      // function updatePercentage(){
+      //   t1.progress();
+      //   console.log('hello');
+      // }
 
 
 
