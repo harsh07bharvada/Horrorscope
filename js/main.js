@@ -41,7 +41,7 @@ $(document).ready(function(){
       //SCROLL-ANIMATIONS
 
       // var t1 = new TimelineMax();
-      // const controller = new ScrollMagic.Controller();
+       const controller = new ScrollMagic.Controller();
 
       // t1
       // .to(".aries-img",0.5,{
@@ -69,6 +69,17 @@ $(document).ready(function(){
       //   console.log('hello');
       // }
 
-
+      var t1 = new TimelineMax();
+      t1.from(".zodiac-img",1,{ ease: Power4.easeOut,x:"-=100"},0)
+      .from(".white-box",1,{ease: Power4.easeOut,width:0,},"-=0.1")
+      .to(".white-box-content",1,{opacity:1})
+      ;
+      var scene = new ScrollMagic.Scene({
+        triggerElement: ".each-zodiac",
+        duration: "50%",
+        triggerHook: 0.25
+      })
+        .setTween(tl)
+        .addTo(controller);
 
   });
