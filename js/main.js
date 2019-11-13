@@ -40,24 +40,29 @@ $(document).ready(function(){
 
       var arr = ['aries','taurus','gemini','cancer','leo','virgo','libra','scorpio','sagittarius','capricorn','aquarius','pisces'];
 
+      arr.forEach((item, index) =>{
+
+        var section_str = "."+item + "-section-";
+        var controller = new ScrollMagic.Controller();
+        var t1 = new TimelineMax();
+        t1.from(section_str+"zodiac-img",0.5,{ ease: Power4.easeOut,x:"-=100"},0)
+        .from(section_str+"white-box",1.2,{ease: Power4.easeOut,width:0,},"-=0.1")
+        .to(section_str+"zodiac-name-text",0.5,{ease: Power4.easeOut,opacity:1})
+        .to(section_str+"month-text",0.5,{ease: Power4.easeOut,opacity:1})
+        .to(section_str+"data-box",0.5,{ease: Power4.easeOut,opacity:1})
+        ;
+        var scene = new ScrollMagic.Scene({
+          triggerElement:section_str+"each-zodiac"
+        })
+        .setTween(t1)
+        .addIndicators(true)
+        .addTo(controller);     
+        });               
       
 
       //SCROLL-ANIMATIONS
 
-      var controller = new ScrollMagic.Controller();
-      var t1 = new TimelineMax();
-      t1.from(".zodiac-img",0.5,{ ease: Power4.easeOut,x:"-=100"},0)
-      .from(".white-box",1.2,{ease: Power4.easeOut,width:0,},"-=0.1")
-      .to(".zodiac-name-text",0.5,{ease: Power4.easeOut,opacity:1})
-      .to(".month-text",0.5,{ease: Power4.easeOut,opacity:1})
-      .to(".data-box",0.5,{ease: Power4.easeOut,opacity:1})
-      ;
-      var scene = new ScrollMagic.Scene({
-        triggerElement:".each-zodiac"
-      })
-      .setTween(t1)
-      .addIndicators(true)
-      .addTo(controller);
+      
 
 
       //STATIC DATA SETTING FUNCTION
