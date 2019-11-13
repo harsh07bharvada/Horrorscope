@@ -38,48 +38,33 @@ $(document).ready(function(){
         ]
       });
 
+      var arr = ['aries','taurus','gemini','cancer','leo','virgo','libra','scorpio','sagittarius','capricorn','aquarius','pisces'];
+
+      
+
       //SCROLL-ANIMATIONS
 
-      // var t1 = new TimelineMax();
-       const controller = new ScrollMagic.Controller();
-
-      // t1
-      // .to(".aries-img",0.5,{
-      //   margin:0, ease: Power4.easeOut
-
-      // })
-      // .to(".aries-img-upper-wrapper",0.5,{
-      //   justifyContent: "flex-center", ease: Power4.easeOut
-      // })
-      // .to(".aries-white-box",0.5,{
-      //   margin:0, ease: Power4.easeOut
-
-      // });
-
-      // const scene = new ScrollMagic.Scene({
-      //   triggerElement:".each-zodiac",
-       
-      // })
-      // .setPin(".each-zodiac")
-      // .setTween(t1)
-      // .addTo(controller);
-
-      // function updatePercentage(){
-      //   t1.progress();
-      //   console.log('hello');
-      // }
-
+      var controller = new ScrollMagic.Controller();
       var t1 = new TimelineMax();
-      t1.from(".zodiac-img",1,{ ease: Power4.easeOut,x:"-=100"},0)
-      .from(".white-box",1,{ease: Power4.easeOut,width:0,},"-=0.1")
-      .to(".white-box-content",1,{opacity:1})
+      t1.from(".zodiac-img",0.5,{ ease: Power4.easeOut,x:"-=100"},0)
+      .from(".white-box",1.2,{ease: Power4.easeOut,width:0,},"-=0.1")
+      .to(".zodiac-name-text",0.5,{ease: Power4.easeOut,opacity:1})
+      .to(".month-text",0.5,{ease: Power4.easeOut,opacity:1})
+      .to(".data-box",0.5,{ease: Power4.easeOut,opacity:1})
       ;
       var scene = new ScrollMagic.Scene({
-        triggerElement: ".each-zodiac",
-        duration: "50%",
-        triggerHook: 0.25
+        triggerElement:".each-zodiac"
       })
-        .setTween(tl)
-        .addTo(controller);
+      .setTween(t1)
+      .addIndicators(true)
+      .addTo(controller);
+
+
+      //STATIC DATA SETTING FUNCTION
+
+      
+
+
+
 
   });
