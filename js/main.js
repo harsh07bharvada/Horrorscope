@@ -43,6 +43,21 @@ $(document).ready(function(){
       arr.forEach((item, index) =>{
 
         var section_str = "."+item + "-section-";
+        var link_str = "."+item+"-link";
+        $(link_str).click(function(e){
+
+          
+          e.preventDefault();
+	
+          var position = $("."+item + "-section").offset().top;
+
+          $("body, html").animate({
+            scrollTop: position
+          } ,500,/* speed */ 
+          );
+        })
+
+
         var controller = new ScrollMagic.Controller();
         var t1 = new TimelineMax();
         t1.from(section_str+"zodiac-img",0.5,{ ease: Power4.easeOut,x:"-=100"},0)
@@ -55,8 +70,9 @@ $(document).ready(function(){
           triggerElement:section_str+"each-zodiac"
         })
         .setTween(t1)
-        .addIndicators(true)
-        .addTo(controller);     
+        .addTo(controller); 
+
+
         });               
       
 
