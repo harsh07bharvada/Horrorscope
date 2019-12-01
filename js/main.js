@@ -103,13 +103,7 @@ $(document).ready(function(){
 
         });               
       
-
-      
-
-      
-
-
-      //DATA SETTING FUNCTIONS
+//DATA SETTING FUNCTIONS
 
       var mainContentSetting = (good_traits,bad_traits,famous_people) =>{
         
