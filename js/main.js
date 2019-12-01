@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     
   //GLIDER 
@@ -59,33 +60,33 @@ $(document).ready(function(){
 
             var section_str = "."+item + "-section-";
             var link_str = "."+item+"-link";
+            var month_text = item+"-section-month-text";
+            var content_text = item + "-section-data-box span";
+
+            fetch('https://api-horroscope.herokuapp.com/graphql', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ query: '{ zodiac (sign_name : "'+item+'"){ sign_name , date_range , good_traits{ trait }, bad_traits{ trait },famous_people{ name } } }' }),
+            })
+            .then(res => res.json())
+            .then(res => {
+              console.log(res.data.zodiac.good_traits);
+              var mainContentData = mainContentSetting(res.data.zodiac.good_traits,res.data.zodiac.bad_traits,res.data.zodiac.famous_people);
+              $("."+month_text).html(res.data.zodiac.date_range);
+              $("."+content_text).html(mainContentData);
+            });
+
             $(link_str).click(function(e){
 
-              
               e.preventDefault();
-      
               var position = $("."+item + "-section").offset().top;
-
               $("body, html").animate({
                 scrollTop: position
               } ,500,/* speed */ 
               );
             })
 
-            // fetch('https://zodiacal.herokuapp.com/'+item,{'Access-Control-Allow-Origin':'*'})
-            // .then(response => {
-            //   console.log(response);
-            //   return response.json()
-            // })
-            // .then(data => {
-            //   // Work with JSON data here
-            //   console.log(data)
-            // })
-            // .catch(err => {
-            //   console.log(err);
-            // })
-
-            var controller = new ScrollMagic.Controller();
+           var controller = new ScrollMagic.Controller();
             var t1 = new TimelineMax();
             t1.from(section_str+"zodiac-img",0.5,{ ease: Power4.easeOut,x:"-=100"},0)
             .from(section_str+"white-box",1.2,{ease: Power4.easeOut,width:0,},"-=0.1")
@@ -103,12 +104,54 @@ $(document).ready(function(){
         });               
       
 
-      //SCROLL-ANIMATIONS
+      
 
       
 
 
-      //STATIC DATA SETTING FUNCTION
+      //DATA SETTING FUNCTIONS
+
+      var mainContentSetting = (good_traits,bad_traits,famous_people) =>{
+        
+        var returnStr = "You are ";
+        good_traits.forEach((item,index)=>{
+
+          if(index != good_traits.length-1)
+          {
+            returnStr+= item.trait + ", ";
+          }
+          else{
+            returnStr+= item.trait +" but ";
+          }
+           
+        });
+        bad_traits.forEach((item,index)=>{
+
+          if(index != bad_traits.length-1)
+          {
+            returnStr+= item.trait + ", ";
+          }
+          else{
+            returnStr+= item.trait +". You share your zodiac birthday with " ;
+          }
+           
+        });
+        famous_people.forEach((item,index)=>{
+
+          if(index != famous_people.length-1)
+          {
+            returnStr+= item.name + ", ";
+          }
+          else{
+            returnStr+= item.name +"." ;
+          }
+           
+        });
+
+        console.log(returnStr);
+        return returnStr;
+
+      }
 
       
 
