@@ -42,9 +42,11 @@ $(document).ready(function(){
         var cont = new ScrollMagic.Controller();
         var main = new TimelineMax();
         main.from(".black-box",1.7,{ ease: Power4.easeOut,width:0},0)
-        .from(".main-heading-box",1.5,{ease: Power4.easeOut,width:0,},"-=0.5")
-        .to(".main-heading-text",0.5,{ease: Power4.easeOut,opacity:1})
-        .to(".sub-heading-text",0.5,{ease: Power4.easeOut,opacity:1})
+        .from(".main-heading-box",1.7,{ease: Power4.easeOut,width:0,},0)
+        .to(".main-heading-text",1.7,{ease: Power4.easeOut,opacity:1,},1)
+        .from(".main-heading-text",1.0,{ease: Power4.easeOut,y:20},1)
+        .to(".sub-heading-text",0.5,{ease: Power4.easeOut,opacity:1},2)
+        .from(".sub-heading-text",1.0,{ease: Power4.easeOut,y:20},2)
         .to(".slider",0.5,{ease: Power4.easeOut,opacity:1})
         ;
         var scene1 = new ScrollMagic.Scene({
