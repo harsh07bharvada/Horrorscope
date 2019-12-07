@@ -1,6 +1,17 @@
 
 $(document).ready(function(){
     
+
+  $(".stagger").hover(
+    function() {
+       TweenLite.to($(this), 0.3, {scale:1.1});
+    },
+    function() {
+       TweenLite.to($(this), 0.15, {scale:1});  
+    }
+ );
+
+  
   //GLIDER 
     new Glider(document.querySelector('.glider'), {
         // Mobile-first defaults
@@ -21,7 +32,7 @@ $(document).ready(function(){
               // Set to `auto` and provide item width to adjust to viewport
               slidesToShow: 'auto',
               slidesToScroll: 'auto',
-              dots: '#dots',
+              //dots: '#dots',
               itemWidth: 150,
               duration: 0.25
             }
@@ -31,7 +42,7 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 4,
               slidesToScroll: 3,
-              dots: '#dots',
+              //dots: '#dots',
               itemWidth: 150,
               duration: 0.25
             }
@@ -46,8 +57,9 @@ $(document).ready(function(){
         .to(".main-heading-text",1.7,{ease: Power4.easeOut,opacity:1,},1)
         .from(".main-heading-text",1.0,{ease: Power4.easeOut,y:20},1)
         .to(".sub-heading-text",0.5,{ease: Power4.easeOut,opacity:1},2)
-        .from(".sub-heading-text",1.0,{ease: Power4.easeOut,y:20},2)
-        .to(".slider",0.5,{ease: Power4.easeOut,opacity:1})
+        .from(".sub-heading-text",0.9,{ease: Power4.easeOut,y:20},2)
+        .to(".slider",0.1,{ease: Power4.easeOut,opacity:1},2)
+        .staggerFrom(".stagger",0.8, {opacity:0, stagger:0.2, x:"-=25"},2)
         ;
         var scene1 = new ScrollMagic.Scene({
           triggerElement:"body"

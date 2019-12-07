@@ -7,7 +7,7 @@
     <title>Horrorscope</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
-    
+    <link rel="shortcut icon" type="image/png" href="./img/jupiter.png"/>
     <link rel="stylesheet" href="./css/glider.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -18,32 +18,32 @@
     <section class="flex flex-col w-full h-screen items-stretch">
         <div class="flex flex-row justify-center items-center sm: h-20 md:h-32 ">
             <div class="w-2/3 mt-40 z-20 bg-transparent sm: h-48 md:h-64 ">
-                <div class="main-heading-box flex justify-center items-center bg-white w-full sm: h-32 md:h-full">
-                    <div class="opacity-0 main-heading-text font-normal text-black tracking-wider sm: text-4xl md:text-6xl">Horrorscope</div>
+                <div class="main-heading-box flex justify-center items-center bg-white w-full sm: h-32 md:h-full shadow-2xl">
+                    <div class="opacity-0 main-heading-text font-normal text-black tracking-widest sm: text-4xl md:text-6xl">Horrorscope</div>
                 </div>
             </div>
         </div>
         <div class="flex flex-row flex-auto sm: px-3 sm: py-3 md:px-8 md:py-8">
-            <div class="black-box flex flex-col bg-black w-full h-full">
+            <div class="black-box flex flex-col bg-black w-full h-full shadow-xl">
                 <div class="flex w-full h-32 ">
 
                 </div>
                 <div class="flex justify-center items-center w-full h-16 ">
-                    <div class="opacity-0 sub-heading-text sm: text-xl md:text-2xl font-light text-center text-white">
-                        Get to know about your zodiac sign and who you share your zodiac birthday with!
+                    <div class="opacity-0 sub-heading-text sm: text-xl md:text-2xl font-medium text-center text-gray-500">
+                        Know about yourself and who you share your birthday with!
                     </div>
                 </div>
                 <div class="opacity-0 slider flex flex-auto mx-10 my-8">
                     <div class="glider-contain multiple">
 
-                        <button class="glider-prev">
+                        <button class="stagger glider-prev ">
                             <i>
-                                <svg class="h-12 w-20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;" xml:space="preserve" ><g><polygon points="476.213,223.106 57.426,223.106 91.819,188.713 70.606,167.5 0,238.106 70.606,308.713 91.819,287.5   57.426,253.106 476.213,253.106 " data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/></g> </svg>
+                                <svg class="h-12 w-20 outline-none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;" xml:space="preserve" ><g><polygon points="476.213,223.106 57.426,223.106 91.819,188.713 70.606,167.5 0,238.106 70.606,308.713 91.819,287.5   57.426,253.106 476.213,253.106 " data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/></g> </svg>
                             </i>
                         </button>
 
                         <div class="glider">
-                            <div class="taurus-link flex flex-col mx-6">
+                            <div class="stagger taurus-link flex flex-col mx-6 ">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/021-taurus.svg" alt="">
@@ -55,7 +55,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="aquarius-link flex flex-col mx-6">
+                            <div class="stagger aquarius-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/001-aquarius.svg" alt="">
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="aries-link flex flex-col mx-6">
+                            <div class="stagger aries-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/003-aries.svg" alt="">
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cancer-link flex flex-col mx-6">
+                            <div class="stagger cancer-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/005-cancer.svg" alt="">
@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="capricorn-link flex flex-col mx-6">
+                            <div class="stagger capricorn-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/007-capricorn.svg" alt="">
@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gemini-link flex flex-col mx-6">
+                            <div class="stagger gemini-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/009-gemini.svg" alt="">
@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="leo-link flex flex-col mx-6">
+                            <div class="stagger leo-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/011-leo.svg" alt="">
@@ -127,7 +127,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="libra-link flex flex-col mx-6">
+                            <div class="stagger libra-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/013-libra.svg" alt="">
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pisces-link flex flex-col mx-6">
+                            <div class="stagger pisces-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/015-pisces.svg" alt="">
@@ -151,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="sagittarius-link flex flex-col mx-6">
+                            <div class="stagger sagittarius-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/017-sagittarius.svg" alt="">
@@ -163,7 +163,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="scorpio-link flex flex-col mx-6">
+                            <div class="stagger scorpio-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/019-scorpio.svg" alt="">
@@ -176,7 +176,7 @@
                                 </div>
                             </div>
                             
-                            <div class="virgo-link flex flex-col mx-6">
+                            <div class="stagger virgo-link flex flex-col mx-6">
                                 <div class="flex h-48 mx-8 bg-white justify-center items-center ">
                                     <div class="flex w-32 h-32 bg-white">
                                         <img src="./img/023-virgo.svg" alt="">
@@ -192,13 +192,13 @@
                         
                         </div>
 
-                        <button class="glider-next">
+                        <button class="stagger glider-next outline-none">
                                 <i>
                                     <svg class="h-12 w-20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;" xml:space="preserve" ><g><polygon points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5   405.606,308.713 476.213,238.106 " data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/></g> </svg>
 
                                 </i>
                             </button>
-                        <div id="dots" class="glider-dots">
+                        <!-- <div id="dots" class="stagger glider-dots"> -->
 
                         </div>
                     </div>
@@ -211,7 +211,7 @@
         <div class="aries-section-each-zodiac flex flex-col w-full h-full md:flex-row">
             <div class="hidden items-center justify-start md:w-1/2 md:flex">
                 <div class="aries-section-zodiac-img flex h-full w-2/3 md:z-40 -mt-20">
-                    <img class=" ml-32" src="./img/aries.webp" alt="">
+                    <img class=" ml-32 shadow-2xl" src="./img/aries.webp" alt="">
                 </div>
             </div>
             <div class="flex w-full h-full items-center justify-center md:items-start md:justify-start md:w-1/2">
@@ -221,14 +221,14 @@
 
 
                     <!-- WHITE-CONTENT_START -->
-                    <div class="white-box-content flex flex-col w-full h-full "> 
+                    <div class="white-box-content flex flex-col w-full h-full shadow-2xl"> 
 
                         <!-- ZODIAC-NAME-HEADING -->
                         <div class="main-heading flex flex-row w-full h-24 ">
                             <div class="w-1/5 h-full md:w-2/5">
 
                             </div>
-                            <div class="zodiac-name-box w-4/5 md:w-3/5 flex h-full bg-black -mt-10 -ml-6 px-2 md:px-10 items-center justify-end ">
+                            <div class="zodiac-name-box w-4/5 md:w-3/5 flex h-full bg-black -mt-10 -ml-6 px-2 md:px-10 items-center justify-end shadow-xl">
                                 <span class="opacity-0 aries-section-zodiac-name-text text-4xl text-white tracking-widest">ARIES</span>
                             </div>
                         </div>
@@ -239,8 +239,8 @@
                             <div class="h-full w-1/2 ">
 
                             </div>
-                            <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                <span class="opacity-0 aries-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                            <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end shadow-xl">
+                                <span class="opacity-0 aries-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                             </div>
                         </div>
 
@@ -300,7 +300,7 @@
     
                                 </div>
                                 <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                    <span class="opacity-0 taurus-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                    <span class="opacity-0 taurus-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                 </div>
                             </div>
     
@@ -360,7 +360,7 @@
     
                                 </div>
                                 <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                    <span class="opacity-0 gemini-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                    <span class="opacity-0 gemini-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                 </div>
                             </div>
     
@@ -420,7 +420,7 @@
         
                                     </div>
                                     <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                        <span class="opacity-0 cancer-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                        <span class="opacity-0 cancer-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                     </div>
                                 </div>
         
@@ -482,7 +482,7 @@
             
                                         </div>
                                         <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                            <span class="opacity-0 leo-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                            <span class="opacity-0 leo-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                         </div>
                                     </div>
             
@@ -543,7 +543,7 @@
                 
                                             </div>
                                             <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                                <span class="opacity-0 virgo-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                                <span class="opacity-0 virgo-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                             </div>
                                         </div>
                 
@@ -604,7 +604,7 @@
                     
                                                 </div>
                                                 <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                                    <span class="opacity-0 libra-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                                    <span class="opacity-0 libra-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                                 </div>
                                             </div>
                     
@@ -665,7 +665,7 @@
         
                                     </div>
                                     <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                        <span class="opacity-0 scorpio-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                        <span class="opacity-0 scorpio-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                     </div>
                                 </div>
         
@@ -726,7 +726,7 @@
             
                                         </div>
                                         <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                            <span class="opacity-0 sagittarius-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                            <span class="opacity-0 sagittarius-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                         </div>
                                     </div>
             
@@ -787,7 +787,7 @@
         
                                     </div>
                                     <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                        <span class="opacity-0 capricorn-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                        <span class="opacity-0 capricorn-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                     </div>
                                 </div>
         
@@ -848,7 +848,7 @@
             
                                         </div>
                                         <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                            <span class="opacity-0 aquarius-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                            <span class="opacity-0 aquarius-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                         </div>
                                     </div>
             
@@ -909,7 +909,7 @@
                 
                                             </div>
                                             <div class="month-box flex h-full w-1/2 primary-red -mt-10 -ml-6 px-2 md:px-10 items-center justify-end">
-                                                <span class="opacity-0 pisces-section-month-text text-sm md:text-xl text-white ">March 31 - April 19</span>
+                                                <span class="opacity-0 pisces-section-month-text text-xs md:text-lg text-white ">March 31 - April 19</span>
                                             </div>
                                         </div>
                 
