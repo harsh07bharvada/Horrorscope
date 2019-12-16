@@ -102,7 +102,7 @@ $(document).ready(function(){
 
            var controller = new ScrollMagic.Controller();
             var t1 = new TimelineMax();
-            t1.from(section_str+"zodiac-img",0.5,{ ease: Power4.easeOut,x:"-=100"},0)
+            t1.from(section_str+"zodiac-img",0.7,{ ease: Power4.easeOut,x:"-=100"},0)
             .from(section_str+"white-box",1.2,{ease: Power4.easeOut,width:0,},"-=0.1")
             .to(section_str+"zodiac-name-text",0.5,{ease: Power4.easeOut,opacity:1})
             .to(section_str+"month-text",0.5,{ease: Power4.easeOut,opacity:1})
