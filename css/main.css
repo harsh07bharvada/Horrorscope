@@ -8,3 +8,10 @@ body{
 .primary-red{
     background:#FA0E15;
 }
+.my-img{
+    background-image: url(/img/my-img.jpeg);
+	background-size:cover;
+	background-position:top;
+    background-repeat:no-repeat;
+    
+}
