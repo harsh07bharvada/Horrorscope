@@ -66,6 +66,23 @@ $(document).ready(function(){
         })
         .setTween(main)
         .addTo(cont); 
+
+        var aboutCont = new ScrollMagic.Controller();
+        var about = new TimelineMax();
+        
+        about.from(".about-me-box",1.7,{ ease: Power4.easeOut,width:0},0)
+        .to(".about-me-text-box",1.5,{ease: Power4.easeOut,opacity:1,},1)
+        .to(".my-name-box",1.8,{ease: Power4.easeOut,opacity:1,},2)
+        .to(".about-data-text",1.8,{ease: Power4.easeOut,opacity:1,},3)
+        .to(".interesting-text",1.8,{ease: Power4.easeOut,opacity:1,},4)
+        .staggerFrom(".about-footer-text",0.8, {opacity:0, stagger:0.2, x:"-=20"},5)
+        ;
+
+        var aboutScene = new ScrollMagic.Scene({
+          triggerElement:".about-me-section"
+        })
+        .setTween(about)
+        .addTo(aboutCont); 
         
 
       var arr = ['aries','taurus','gemini','cancer','leo','virgo','libra','scorpio','sagittarius','capricorn','aquarius','pisces'];
