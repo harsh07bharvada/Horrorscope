@@ -2,7 +2,7 @@
 $(document).ready(function(){
     
 
-  $(".stagger").hover(
+  $(".stagger,.github-icon,.linkedin-icon,.dribbble-icon").hover(
     function() {
        TweenLite.to($(this), 0.3, {scale:1.1});
     },
